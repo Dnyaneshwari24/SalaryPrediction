@@ -15,6 +15,6 @@ def get_salary():
     query=[[float(request.form['text2'])]]
     x_query=poly.transform(query)
     sal=model.predict(x_query)
-    return 'Hii:'+request.form["text1"]+'Yoy predicted salary after'+request.form["text2"]+'Experience is'+str(sal)
+    return 'Hii: '+request.form["text1"]+' Your predicted salary after '+request.form["text2"]+'Experience is'+str(sal)
 if __name__=='__main__':
     app.run(debug=True)
